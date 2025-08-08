@@ -1,0 +1,22 @@
+[project]
+name = "SmallBagOfTools"
+version = "0.0.1"
+author = "Giuseppe Fasano"
+author_email = "giuseppe.fasano@poliba.it"
+description = "Sometimes you need small tools for great projects."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/GiuseppeFasano/SmallBagOfTools.git"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
