@@ -50,19 +50,19 @@ class summaryManager:
         self.summary = summary;
         
     
-    def _update_with_dict(seld, data: dict):
-        if summary.shape[0] != 0:
-            summary.loc[summary.shape[0]] = data;
+    def _update_with_dict(self, data: dict):
+        if self.summary.shape[0] != 0:
+            self.summary.loc[self.summary.shape[0]] = data;
         
         else:       
-            summary = pd.DataFrame(data, index=[0]);
+            self.summary = pd.DataFrame(data, index=[0]);
 
 
-    def _update_with_dataframe(seld, data: pd.DataFrame):
-        if summary.shape[0] != 0:
-            summary = pd.concat([summary, data]).reset_index(drop = True); 
+    def _update_with_dataframe(self, data: pd.DataFrame):
+        if self.summary.shape[0] != 0:
+            self.summary = pd.concat([self.summary, data]).reset_index(drop = True); 
         else:       
-            summary = data.copy(deep = True);      
+            self.summary = data.copy(deep = True);      
     
     
     def get_start_index(self):
