@@ -40,10 +40,10 @@ class summaryManager:
             print("\n[!] Pregressed work found.");
             summary = read_dataframe(self.path);
             start_idx = summary.shape[0];
-            print(f"[i] Already done: {start_idx}\n     Restarting from {start_idx+1}.");
+            print(f"[i] Already done: {start_idx}\n    Restarting from {start_idx+1}.\n");
 
         else:
-            print("\n[X] No pregressed work found."); 
+            print("\n[X] No pregressed work found.\n"); 
             summary = pd.DataFrame();
             start_idx = 0;
         
@@ -77,7 +77,7 @@ class summaryManager:
     
     
     def save(self):
-        self.summary.to_csv(self.summary, index = False);
+        self.summary.to_csv(self.path, index = False);
     
 
      
