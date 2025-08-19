@@ -18,5 +18,12 @@ Homepage = "https://github.com/GiuseppeFasano/SmallBagOfTools.git"
 Issues = "https://github.com/pypa/sampleproject/issues"
 
 [build-system]
-requires = ["hatchling >= 1.26"]
+requires = [
+    "hatchling >= 1.26",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "nibabel",
+    "torch",
+]
 build-backend = "hatchling.build"
